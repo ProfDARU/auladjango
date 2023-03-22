@@ -1,0 +1,10 @@
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for p in posts %}
+<div>
+    <p>publicado: {{ p.published_date }}</p>
+    <h2><a href="">{{ p.title }}</a></h2>
+    <p>{{p.text}}</div>
+{% endfor %}
